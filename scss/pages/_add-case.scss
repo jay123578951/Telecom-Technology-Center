@@ -1,0 +1,120 @@
+.add-case {
+  position: relative;
+  max-width: $container;
+  margin: 0 auto;
+
+  h1 {
+    max-width: $container;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-top: 63px;
+    margin-bottom: 37px;
+  }
+
+  form {
+    .case-data-block,
+    .case-information-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .form-control {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: calc(50% - 18px);
+        margin-bottom: 20px;
+
+        label {
+          margin-right: 13px;
+        }
+
+        input, select {
+          max-width: $add-case-input-width;
+        }
+      }
+    }
+
+    .case-data-block {
+      margin-bottom: 96px;
+
+      .form-text {
+        width: 100%;
+        font-size: 14px;
+        text-align: right;
+        margin-top: 8px;
+        margin-right: -9px;
+      }
+
+      .series-main-case-lg {
+        width: calc(#{$add-case-input-width} - 50px);
+        margin-right: 12px;
+      }
+
+      .series-main-case-sm {
+        width: 38px;
+      }
+    }
+
+    .case-information-block {
+      margin-bottom: 71px;
+
+      .save-information-btn {
+        padding: 6px 22px;
+        margin-bottom: -8px;
+      }
+
+      .payment-select {
+        width: calc(#{$add-case-input-width} / 2 - 6px);
+        margin-right: 6px;
+      }
+
+      .payment-input {
+        width: calc(#{$add-case-input-width} / 2 - 6px);
+        margin-left: 6px;
+      }
+
+      .form-w-max {
+        width: 100%;
+
+        input {
+          max-width: 989px;
+        }
+      }
+
+      .form-upload {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+
+        input {
+          width: calc(#{$add-case-input-width} - 115.45px);
+          padding: 0;
+          border: none;
+        }
+
+        button {
+          border-radius: 3px;
+          padding: 6px 16px;
+
+          img {
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+
+    .case-submit-block {
+      text-align: right;
+      margin-bottom: 214px;
+
+      button {
+        padding: 6px 38px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+footer {
+  max-width: $container;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  padding: 0 64px;
+
+  .footer-contact {
+    display: flex;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 28px;
+    &:first-of-type {
+      ul {
+        margin-right: 78px;
+      }
+    }
+  }
+
+  .footer-copy {
+    font-size: 14px;
+    color: #898989;
+  }
+}

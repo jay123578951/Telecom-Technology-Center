@@ -1,0 +1,99 @@
+.btn {
+  display: inline-block;
+  color: $info;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  padding: 6px 12px;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: $form-transition;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: $primary;
+  border-color: $primary;
+
+  &:focus {
+    box-shadow: 0 0 0 4px rgba(39, 67, 118, 0.2);
+  }
+
+  &:active {
+    background-color: #001d4a;
+    border-color: #001d4a;
+  }
+
+  &:hover {
+    background-color: #001d4a;
+    border-color: #001d4a;
+  }
+}
+
+.btn-secondary {
+  color: white;
+  background-color: $secondary;
+  border-color: $secondary;
+
+  &:focus {
+    box-shadow: 0 0 0 4px rgba(125, 85, 67, 0.2);
+  }
+
+  &:active {
+    background-color: #4f2c1c;
+    border-color: #4f2c1c;
+  }
+
+  &:hover {
+    background-color: #4f2c1c;
+    border-color: #4f2c1c;
+  }
+}
+
+.btn-third {
+  color: $info;
+  background-color: rgba(244, 244, 244, 0.6);
+  border-color: $border;
+
+  &:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.2);
+  }
+
+  &:active {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.2);
+  }
+
+  &:hover {
+    background-color: rgba(244, 244, 244, 1);
+    border-color: rgba(244, 244, 244, 1);
+  }
+}
+
+.btn-cancel {
+  color: white;
+  background-color: #888888;
+  border-color: #888888;
+
+  &:focus {
+    border-color: #5b5b5b;
+    box-shadow: 0 0 0 4px rgba(139, 139, 139, 0.2);
+  }
+
+  &:active {
+    border-color: #5b5b5b;
+    box-shadow: 0 0 0 4px rgba(139, 139, 139, 0.2);
+  }
+
+  &:hover {
+    background-color: #5b5b5b;
+    border-color: #5b5b5b;
+  }
+}

@@ -1,5 +1,15 @@
 @import 'base/reset';
+
 @import 'helpers/variable';
+@import 'helpers/helpers';
+
+@import 'components/buttons';
+@import 'components/input';
+@import 'components/select';
+
 @import 'layout/header';
 @import 'layout/footer';
+
 @import 'pages/index';
+@import 'pages/login';
+@import 'pages/add-case';

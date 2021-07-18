@@ -8,6 +8,101 @@
   <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
-
+  <header>
+    <div class="header-background"></div>
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">電信技術中心型式認證投件系統</a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">投件清單</a></li>
+        <li><a href="">一致性會議</a></li>
+        <li><a href="">說明會資料</a></li>
+        <li><a href="">個人資料維護</a></li>
+        <li><a href="">同實驗室申請</li>
+        <li><a href="login.html">登出</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container transparent-bg">
+    <section class="send-list">
+      <h1>投件清單</h1>
+      <form>
+        <div class="search-block">
+          <div class="form-input">
+            <label for="startDate">開始日期</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-input">
+            <label for="endDate">結束日期</label>
+            <input type="text" id="endDate" class="form_input">
+          </div>
+          <div class="form-input">
+            <label for="caseType">案件類別</label>
+            <select id="caseType" class="form-select">
+              <option selected>全部案件</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label for="caseStatus">案件狀態</label>
+            <select id="caseStatus" class="form-select">
+              <option selected>全部</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary search-btn">查詢</button>
+        </div>
+        <a href="add-case.html">
+          <button type="button" class="btn btn-secondary add-btn">新增案件</button>
+        </a>
+      </form>
+      <div class="data-table">
+        <table>
+          <thead>
+            <tr>
+              <th>案件類別</th>
+              <th>投件日期</th>
+              <th>系列主案件</th>
+              <th>案件編號</th>
+              <th>委託類別</th>
+              <th>系列案件</th>
+              <th>產品名稱</th>
+              <th>廠牌</th>
+              <th>型號</th>
+              <th>案件狀態</th>
+              <th>系列新增</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-th="案件類別">一般</td>
+              <td data-th="投件日期">2020/01/01</td>
+              <td data-th="系列主案件" class="data-sp-color">RCB20193J0356</td>
+              <td data-th="案件編號" class="data-sp-color">RCB20193J0356</td>
+              <td data-th="委託類別">BS-型式認證</td>
+              <td data-th="系列案件"></td>
+              <td data-th="產品名稱">遙控車</td>
+              <td data-th="廠牌">wisoft</td>
+              <td data-th="型號">wisoft001</td>
+              <td data-th="案件狀態">退件</td>
+              <td data-th="系列新增"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-contact">
+      <ul>
+        <li>新北辦公室：22063新北市板橋區遠東路1號3樓B室</li>
+        <li>電話：+886-2-8953-5600　傳真：+886-2-8953-5955</li>
+      </ul>
+      <ul>
+        <li>高雄本部：82151高雄市路竹區路科一路3號（南科高雄園區）</li>
+        <li>電話：+886-7-695-5001　傳真：+886-7-695-5019</li>
+      </ul>
+    </section>
+    <section class="footer-copy">
+      <p>版權所有 © 2020 財團法人電信技術中心 Telecom Technology Center.</p>
+    </section>
+  </footer>
 </body>
 </html>

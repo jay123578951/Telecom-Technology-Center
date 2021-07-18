@@ -1,0 +1,24 @@
+.form-select {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 8.5px;
+  color: $info;
+  background: rgba(255,255,255,0.6);
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 13px 6.5px;
+  border: 1px solid rgba(114, 114, 114, 0.6);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: $form-transition;
+
+  &:active,
+  &:focus-visible {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.2);
+  }
+}

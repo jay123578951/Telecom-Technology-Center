@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+  <header>
+    <div class="header-background"></div>
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">電信技術中心型式認證投件系統</a>
+      <ul class="navbar-nav">
+        <li><a href="index.html">投件清單</a></li>
+        <li><a href="">一致性會議</a></li>
+        <li><a href="">說明會資料</a></li>
+        <li><a href="">個人資料維護</a></li>
+        <li><a href="">同實驗室申請</li>
+        <li><a href="login.html">登出</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container transparent-bg">
+    <section class="add-case">
+      <h1>新增案件</h1>
+      <form>
+        <div class="case-data-block">
+          <div class="form-control">
+            <label for="caseDataId">案件編號</label>
+            <input type="text" id="caseDataId" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="caseDataStatus">案件狀態</label>
+            <input type="text" id="caseDataStatus" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="caseDataCommissionType">委託類別</label>
+            <select id="caseDataCommissionType" class="form-select">
+              <option selected>LP-型式認證</option>
+            </select>
+            <p class="form-text">（LP-電信管制射頻器材PLMN-電信終端設備 BS-有線電信終端設備）</p>
+          </div>
+          <div class="form-control">
+            <label for="caseDataType">案件類別</label>
+            <select id="caseDataType" class="form-select">
+              <option selected>一般</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="caseDataSeriesMain">系列主案件</label>
+            <input type="text" class="form_input series-main-case-lg" id="caseDataSeriesMain">
+            <input type="text" class="form_input series-main-case-sm">
+          </div>
+          <div class="form-control">
+            <label for="caseDataDays">保密天數</label>
+            <input type="text" id="caseDataDays" class="form_input">
+          </div>
+        </div>
+        <div class="case-information-block">
+          <div class="form-control">
+            <button type="button" class="btn btn-primary save-information-btn">儲存廠商基本資料</button>
+          </div>
+          <div class="form-control"></div>
+          <div class="form-control">
+            <label for="startDate">公司統一編號</label>
+            <input type="text" id="startDate" class="form_input" placeholder="無統編請輸入NA">
+          </div>
+          <div class="form-control"></div>
+          <div class="form-control">
+            <label for="startDate">申請者</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">產品名稱</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">製作廠商</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">廠牌</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">型號</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">型態</label>
+            <select id="caseDataCommissionType" class="form-select">
+              <option selected>核發</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="startDate">繳費方式</label>
+            <select id="caseDataCommissionType" class="form-select payment-select">
+              <option selected>請選擇繳費方式</option>
+            </select>
+            <input type="text" id="startDate" class="form_input payment-input">
+          </div>
+          <div class="form-control"></div>
+          <div class="form-control">
+            <label for="startDate">聯絡人</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">代表人</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">聯絡人E-mail</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">案件CC E-mail</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <label for="startDate">聯絡人電話</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control"></div>
+          <div class="form-control form-w-max">
+            <label for="startDate">住居所</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control form-w-max">
+            <label for="startDate">營業所地址</label>
+            <input type="text" id="startDate" class="form_input">
+          </div>
+          <div class="form-control">
+            <div class="form-upload">
+              <label for="startDate">附件</label>
+              <input type="file" id="startDate" class="form_input">
+              <button type="button" class="btn btn-third">
+                <img src="./images/plus.svg" alt="">
+                增加附件
+              </button>
+            </div>
+          </div>
+          <div class="form-control"></div>
+          <div class="form-control">
+            <div class="form-upload">
+              <label for="startDate">外觀照</label>
+              <input type="file" id="startDate" class="form_input">
+              <button type="button" class="btn btn-third">
+                <img src="./images/plus.svg" alt="">
+                增加附件
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="case-submit-block">
+          <button type="submit" class="btn btn-secondary">投件</button>
+          <button type="button" class="btn btn-primary">存檔</button>
+          <button type="button" class="btn btn-cancel">取消</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-contact">
+      <ul>
+        <li>新北辦公室：22063新北市板橋區遠東路1號3樓B室</li>
+        <li>電話：+886-2-8953-5600　傳真：+886-2-8953-5955</li>
+      </ul>
+      <ul>
+        <li>高雄本部：82151高雄市路竹區路科一路3號（南科高雄園區）</li>
+        <li>電話：+886-7-695-5001　傳真：+886-7-695-5019</li>
+      </ul>
+    </section>
+    <section class="footer-copy">
+      <p>版權所有 © 2020 財團法人電信技術中心 Telecom Technology Center.</p>
+    </section>
+  </footer>
+</body>
+</html>
