@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>投件清單</title>
   <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
@@ -14,79 +14,79 @@
       <a class="navbar-brand" href="index.html">電信技術中心型式認證投件系統</a>
       <ul class="navbar-nav">
         <li><a href="index.html">投件清單</a></li>
-        <li><a href="">一致性會議</a></li>
-        <li><a href="">說明會資料</a></li>
-        <li><a href="">個人資料維護</a></li>
-        <li><a href="">同實驗室申請</li>
+        <li><a href="meeting.html">一致性會議</a></li>
+        <li><a href="seminar.html">說明會資料</a></li>
+        <li><a href="profile.html">個人資料維護</a></li>
+        <li><a href="laboratory.html">同實驗室申請</li>
         <li><a href="login.html">登出</a></li>
       </ul>
     </nav>
   </header>
   <main class="container transparent-bg">
     <section class="send-list">
-      <h1>投件清單</h1>
+      <h1 class="h1">投件清單</h1>
       <form>
         <div class="search-block">
-          <div class="form-input">
+          <div class="form-control">
             <label for="startDate">開始日期</label>
             <input type="text" id="startDate" class="form_input">
           </div>
-          <div class="form-input">
+          <div class="form-control">
             <label for="endDate">結束日期</label>
             <input type="text" id="endDate" class="form_input">
           </div>
-          <div class="form-input">
+          <div class="form-control">
             <label for="caseType">案件類別</label>
             <select id="caseType" class="form-select">
               <option selected>全部案件</option>
             </select>
           </div>
-          <div class="form-input">
+          <div class="form-control">
             <label for="caseStatus">案件狀態</label>
             <select id="caseStatus" class="form-select">
               <option selected>全部</option>
             </select>
           </div>
           <button type="button" class="btn btn-primary search-btn">查詢</button>
+          <a href="add-case.html">
+            <button type="button" class="btn btn-secondary add-btn">新增案件</button>
+          </a>
         </div>
-        <a href="add-case.html">
-          <button type="button" class="btn btn-secondary add-btn">新增案件</button>
-        </a>
+        <div class="data-table">
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>案件類別</th>
+                <th>投件日期</th>
+                <th>系列主案件</th>
+                <th>案件編號</th>
+                <th>委託類別</th>
+                <th>系列案件</th>
+                <th>產品名稱</th>
+                <th>廠牌</th>
+                <th>型號</th>
+                <th>案件狀態</th>
+                <th>系列新增</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="案件類別">一般</td>
+                <td data-th="投件日期">2020/01/01</td>
+                <td data-th="系列主案件" class="link-color">RCB20193J0356</td>
+                <td data-th="案件編號" class="link-color">RCB20193J0356</td>
+                <td data-th="委託類別">BS-型式認證</td>
+                <td data-th="系列案件"></td>
+                <td data-th="產品名稱">遙控車</td>
+                <td data-th="廠牌">wisoft</td>
+                <td data-th="型號">wisoft001</td>
+                <td data-th="案件狀態">退件</td>
+                <td data-th="系列新增"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </form>
-      <div class="data-table">
-        <table>
-          <thead>
-            <tr>
-              <th>案件類別</th>
-              <th>投件日期</th>
-              <th>系列主案件</th>
-              <th>案件編號</th>
-              <th>委託類別</th>
-              <th>系列案件</th>
-              <th>產品名稱</th>
-              <th>廠牌</th>
-              <th>型號</th>
-              <th>案件狀態</th>
-              <th>系列新增</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-th="案件類別">一般</td>
-              <td data-th="投件日期">2020/01/01</td>
-              <td data-th="系列主案件" class="data-sp-color">RCB20193J0356</td>
-              <td data-th="案件編號" class="data-sp-color">RCB20193J0356</td>
-              <td data-th="委託類別">BS-型式認證</td>
-              <td data-th="系列案件"></td>
-              <td data-th="產品名稱">遙控車</td>
-              <td data-th="廠牌">wisoft</td>
-              <td data-th="型號">wisoft001</td>
-              <td data-th="案件狀態">退件</td>
-              <td data-th="系列新增"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </section>
   </main>
   <footer>

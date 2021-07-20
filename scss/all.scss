@@ -6,6 +6,7 @@
 @import 'components/buttons';
 @import 'components/input';
 @import 'components/select';
+@import 'components/table';
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -13,3 +14,7 @@
 @import 'pages/index';
 @import 'pages/login';
 @import 'pages/add-case';
+@import 'pages/profile';
+@import 'pages/meeting';
+@import 'pages/seminar';
+@import 'pages/laboratory';

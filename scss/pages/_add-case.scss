@@ -7,7 +7,6 @@
     max-width: $container;
     margin: 0 auto;
     font-size: 24px;
-    padding-top: 63px;
     margin-bottom: 37px;
   }
 
@@ -27,6 +26,10 @@
         width: calc(50% - 18px);
         margin-bottom: 20px;
 
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
         label {
           margin-right: 13px;
         }
@@ -38,7 +41,7 @@
     }
 
     .case-data-block {
-      margin-bottom: 96px;
+      margin-bottom: 64px;
 
       .form-text {
         width: 100%;
@@ -59,7 +62,7 @@
     }
 
     .case-information-block {
-      margin-bottom: 71px;
+      margin-bottom: 64px;
 
       .save-information-btn {
         padding: 6px 22px;
@@ -109,7 +112,6 @@
 
     .case-submit-block {
       text-align: right;
-      margin-bottom: 214px;
 
       button {
         padding: 6px 38px;

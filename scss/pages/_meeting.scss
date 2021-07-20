@@ -1,0 +1,37 @@
+.meeting {
+  .meeting-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .form-control {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+
+      label {
+        margin-right: 8px;
+      }
+
+      input {
+        font-size: 16px;
+        width: 180px;
+      }
+    }
+  }
+
+  .meeting-table {
+    th {
+      &:nth-of-type(1) {
+        width: 20%;
+      }
+      &:nth-of-type(2) {
+        width: 60%;
+      }
+      &:nth-of-type(3) {
+        width: 20%;
+      }
+    }
+  }
+}

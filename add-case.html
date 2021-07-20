@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>新增案件</title>
   <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
@@ -14,17 +14,17 @@
       <a class="navbar-brand" href="index.html">電信技術中心型式認證投件系統</a>
       <ul class="navbar-nav">
         <li><a href="index.html">投件清單</a></li>
-        <li><a href="">一致性會議</a></li>
-        <li><a href="">說明會資料</a></li>
-        <li><a href="">個人資料維護</a></li>
-        <li><a href="">同實驗室申請</li>
+        <li><a href="meeting.html">一致性會議</a></li>
+        <li><a href="seminar.html">說明會資料</a></li>
+        <li><a href="profile.html">個人資料維護</a></li>
+        <li><a href="laboratory.html">同實驗室申請</li>
         <li><a href="login.html">登出</a></li>
       </ul>
     </nav>
   </header>
   <main class="container transparent-bg">
     <section class="add-case">
-      <h1>新增案件</h1>
+      <h1 class="h1">新增案件</h1>
       <form>
         <div class="case-data-block">
           <div class="form-control">
@@ -64,77 +64,77 @@
           </div>
           <div class="form-control"></div>
           <div class="form-control">
-            <label for="startDate">公司統一編號</label>
-            <input type="text" id="startDate" class="form_input" placeholder="無統編請輸入NA">
+            <label for="informationTaxId">公司統一編號</label>
+            <input type="text" id="informationTaxId" class="form_input" placeholder="無統編請輸入NA">
           </div>
           <div class="form-control"></div>
           <div class="form-control">
-            <label for="startDate">申請者</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationName">申請者</label>
+            <input type="text" id="informationName" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">產品名稱</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationProduct">產品名稱</label>
+            <input type="text" id="informationProduct" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">製作廠商</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationManufacturer">製作廠商</label>
+            <input type="text" id="informationManufacturer" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">廠牌</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationBrand">廠牌</label>
+            <input type="text" id="informationBrand" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">型號</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationModel">型號</label>
+            <input type="text" id="informationModel" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">型態</label>
-            <select id="caseDataCommissionType" class="form-select">
+            <label for="informationType">型態</label>
+            <select id="informationType" class="form-select">
               <option selected>核發</option>
             </select>
           </div>
           <div class="form-control">
-            <label for="startDate">繳費方式</label>
-            <select id="caseDataCommissionType" class="form-select payment-select">
+            <label for="informationPayment">繳費方式</label>
+            <select id="informationPayment" class="form-select payment-select">
               <option selected>請選擇繳費方式</option>
             </select>
-            <input type="text" id="startDate" class="form_input payment-input">
+            <input type="text" class="form_input payment-input">
           </div>
           <div class="form-control"></div>
           <div class="form-control">
-            <label for="startDate">聯絡人</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationContactName">聯絡人</label>
+            <input type="text" id="informationContactName" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">代表人</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationRepresentative">代表人</label>
+            <input type="text" id="informationRepresentative" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">聯絡人E-mail</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationContactEmail">聯絡人E-mail</label>
+            <input type="email" id="informationContactEmail" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">案件CC E-mail</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationContactCCEmail">案件CC E-mail</label>
+            <input type="email" id="informationContactCCEmail" class="form_input">
           </div>
           <div class="form-control">
-            <label for="startDate">聯絡人電話</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationContactPhone">聯絡人電話</label>
+            <input type="text" id="informationContactPhone" class="form_input">
           </div>
           <div class="form-control"></div>
           <div class="form-control form-w-max">
-            <label for="startDate">住居所</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationHome">住居所</label>
+            <input type="text" id="informationHome" class="form_input">
           </div>
           <div class="form-control form-w-max">
-            <label for="startDate">營業所地址</label>
-            <input type="text" id="startDate" class="form_input">
+            <label for="informationBusiness">營業所地址</label>
+            <input type="text" id="informationBusiness" class="form_input">
           </div>
           <div class="form-control">
             <div class="form-upload">
-              <label for="startDate">附件</label>
-              <input type="file" id="startDate" class="form_input">
+              <label for="informationAnnex">附件</label>
+              <input type="file" id="informationAnnex" class="form_input">
               <button type="button" class="btn btn-third">
                 <img src="./images/plus.svg" alt="">
                 增加附件
@@ -144,8 +144,8 @@
           <div class="form-control"></div>
           <div class="form-control">
             <div class="form-upload">
-              <label for="startDate">外觀照</label>
-              <input type="file" id="startDate" class="form_input">
+              <label for="informationPhoto">外觀照</label>
+              <input type="file" id="informationPhoto" class="form_input">
               <button type="button" class="btn btn-third">
                 <img src="./images/plus.svg" alt="">
                 增加附件
