@@ -6,13 +6,23 @@
     text-align: center;
     color: white;
     font-size: 26px;
-    padding-top: 91px;
+    padding-top: 72px;
     margin-bottom: 36px;
+    @include media-breakpoint-md {
+      padding-top: 91px;
+    }
   }
 
   .form-container {
     position: relative;
     text-align: center;
+    padding: 0 16px;
+    padding-top: 64px;
+    @include media-breakpoint-md {
+      padding: 0 95px;
+      padding-top: 64px;
+    }
+
     &:after {
       content: '';
       display: block;
@@ -28,27 +38,43 @@
 
     h1 {
       font-size: 24px;
-      padding-top: 67px;
       margin-bottom: 32px;
     }
 
     .input-block {
-      width: fit-content;
+      width: 100%;
       margin: 0 auto;
+      @include media-breakpoint-md {
+        width: fit-content;
+      }
 
-      .form-input {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-bottom: 20px;
-
+      .form-control {
+        position: relative;
+        text-align: left;
+        margin-bottom: 16px;
+        @include media-breakpoint-md {
+          margin-bottom: 20px;
+        }
+        
         label {
-          margin-right: 20px;
+          display: block;
+          position: relative;
+          margin-bottom: 6px;
+          @include media-breakpoint-md {
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translate(-100%, -50%);
+            margin-bottom: 0;
+          }
         }
 
         input {
           position: relative;
-          width: 355px;
+          width: 100%;
+          @include media-breakpoint-md {
+            width: 355px;
+          }
         }
       }
     }
@@ -56,11 +82,18 @@
     .input-verification-code {
       text-align: right;
       margin-top: -5px;
-      margin-bottom: 34px;
+      margin-bottom: 24px;
+      @include media-breakpoint-md {
+        margin-bottom: 32px;
+      }
     }
 
     .form-remember {
-      margin-bottom: 47px;
+      margin-bottom: 32px;
+      @include media-breakpoint-md {
+        margin-bottom: 46px;
+      }
+
       label {
         margin-right: 16px;
       }
@@ -91,17 +124,23 @@
     }
 
     .form-submit {
-      width: 354px;
+      width: 100%;
       padding: 7px 0;
-      margin-bottom: 83px;
+      margin-bottom: 32px;
+      @include media-breakpoint-md {
+        width: 354px;
+        margin-bottom: 72px;
+      }
     }
 
     .form-supplement {
       font-size: 14px;
       line-height: 30px;
       text-align: left;
-      padding: 0 95px;
-      margin-bottom: 101px;
+      margin-bottom: 72px;
+      @include media-breakpoint-md {
+        margin-bottom: 100px;
+      }
     }
   }
 }

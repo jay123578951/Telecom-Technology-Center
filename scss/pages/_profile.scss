@@ -5,26 +5,41 @@
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 64px;
+      margin-bottom: 32px;
+      @include media-breakpoint-md {
+        margin-bottom: 64px;
+      }
   
       .form-control {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
         width: 100%;
         margin-bottom: 20px;
+        @include media-breakpoint-md {
+          flex-wrap: nowrap;
+        }
   
         &:last-of-type {
           margin-bottom: 0;
         }
   
         label {
+          width: 100%;
           margin-right: 13px;
+          margin-bottom: 8px;
+          @include media-breakpoint-md {
+            width: auto;
+            margin-bottom: 0;
+          }
         }
   
         input {
-          width: calc(100% - 96px);
+          width: 100%;
+          @include media-breakpoint-md {
+            width: calc(100% - 96px);
+          }
         }
       }
     }

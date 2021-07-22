@@ -1,22 +1,35 @@
 .meeting {
   .meeting-search {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: 16px;
+    @include media-breakpoint-md {
+      align-items: center;
+    }
 
     .form-control {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       margin-right: 20px;
 
       label {
-        margin-right: 8px;
+        width: 100%;
+        margin-bottom: 8px;
+        @include media-breakpoint-md {
+          width: auto;
+          margin-right: 8px;
+          margin-bottom: 0;
+        }
       }
 
       input {
         font-size: 16px;
-        width: 180px;
+        width: 100%;
+        @include media-breakpoint-md {
+          width: 180px;
+        }
       }
     }
   }
@@ -31,6 +44,12 @@
       }
       &:nth-of-type(3) {
         width: 20%;
+      }
+    }
+
+    td {
+      &:before {
+        width: 124px;
       }
     }
   }

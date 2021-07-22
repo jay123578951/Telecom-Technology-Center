@@ -2,16 +2,45 @@ footer {
   max-width: $container;
   margin: 0 auto;
   margin-bottom: 39px;
-  padding: 0 64px;
+  padding: 0 16px;
+  @include media-breakpoint-md {
+    padding: 0 32px;
+  }
+  @include media-breakpoint-lg {
+    padding: 0 64px;
+  }
 
   .footer-contact {
     display: flex;
+    flex-wrap: wrap;
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 28px;
+    @include media-breakpoint-lg {
+      flex-wrap: nowrap;
+    }
+
     &:first-of-type {
       ul {
-        margin-right: 78px;
+        margin-right: 0;
+        margin-bottom: 16px;
+        @include media-breakpoint-lg {
+          margin-right: 72px;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      color: $info;
+      text-decoration: none;
+      @include media-breakpoint-lg {
+        display: inline-block;
+        margin-right: 16px;
+      }
+
+      &:hover {
+        color: $link;
       }
     }
   }

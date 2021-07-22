@@ -43,7 +43,10 @@
     .data-table {
       .form-table {
         th, td {
-          text-align: center;
+          text-align: left;
+          @include media-breakpoint-md {
+            text-align: center;
+          }
         }
       }
     }

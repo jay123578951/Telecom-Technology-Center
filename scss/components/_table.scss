@@ -1,18 +1,59 @@
 .form-table {
   width: 100%;
+  font-size: 15px;
+  text-align: left;
 
-  thead, tbody {
+  thead {
     width: 100%;
+
+    tr {
+      border: 1px solid #707070;
+    }
+  
+    th {
+      display: none;
+      background-color: rgba(133, 132, 131, 0.2);
+      padding: 8px 12px;
+      @include media-breakpoint-md {
+        display: table-cell;
+        border: 1px solid #707070;
+      }
+    }
   }
 
-  th, td {
-    border: 1px solid #707070;
-    text-align: left;
-    padding: 8px 12px;
-    font-size: 15px;
-  }
+  tbody {
+    width: 100%;
 
-  th {
-    background-color: rgba(133, 132, 131, 0.2);
+    tr {
+      border: 1px solid #707070;
+    }
+
+    td {
+      display: block;
+      padding: 8px 16px;
+
+      &:first-of-type {
+        padding-top: 16px;
+      }
+
+      &:last-of-type {
+        padding-bottom: 16px;
+      }
+      @include media-breakpoint-md {
+        display: table-cell;
+        border: 1px solid #707070;
+        padding: 8px 12px;
+      }
+  
+      &:before {
+        content: attr(data-th)'： ';
+        display: inline-block;
+        width: 90px;
+        color: $info;
+        @include media-breakpoint-md {
+          display: none;
+        }
+      }
+    }
   }
 }
