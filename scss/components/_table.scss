@@ -14,7 +14,7 @@
       display: none;
       background-color: rgba(133, 132, 131, 0.2);
       padding: 8px 12px;
-      @include media-breakpoint-md {
+      @include media-breakpoint-lg {
         display: table-cell;
         border: 1px solid #707070;
       }
@@ -39,7 +39,7 @@
       &:last-of-type {
         padding-bottom: 16px;
       }
-      @include media-breakpoint-md {
+      @include media-breakpoint-lg {
         display: table-cell;
         border: 1px solid #707070;
         padding: 8px 12px;
@@ -50,7 +50,7 @@
         display: inline-block;
         width: 90px;
         color: $info;
-        @include media-breakpoint-md {
+        @include media-breakpoint-lg {
           display: none;
         }
       }

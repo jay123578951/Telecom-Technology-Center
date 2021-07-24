@@ -1,0 +1,30 @@
+.form-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  @include media-breakpoint-lg {
+    width: auto;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 8px;
+    @include media-breakpoint-lg {
+      width: auto;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    width: 100%;
+    @include media-breakpoint-lg {
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.transparent-bg {
+  padding: 32px 16px;
+  @include media-breakpoint-md {
+    padding: 48px 32px;
+  }
+  @include media-breakpoint-lg {
+    padding: 64px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.6;
+    z-index: -1;
+  }
+}

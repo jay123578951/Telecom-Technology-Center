@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>說明會資料</title>
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+  <header>
+    <div class="header-background"></div>
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">電信技術中心型式認證投件系統</a>
+      <div class="menu-wrapper">
+        <div class="hamburger-menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">投件清單</a></li>
+        <li><a href="meeting.html">一致性會議</a></li>
+        <li><a href="seminar.html">說明會資料</a></li>
+        <li><a href="profile.html">個人資料維護</a></li>
+        <li><a href="laboratory.html">不同實驗室申請</li>
+        <li><a href="login.html">登出</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container transparent-bg">
+    <section class="seminar">
+      <h1 class="h1">說明會資料</h1>
+      <form>
+        <div class="seminar-search">
+          <div class="form-control seminar-form-control">
+            <label for="meetigKeyword">關鍵字</label>
+            <input type="text" id="meetigKeyword" class="form_input">
+          </div>
+          <button type="submit" class="btn btn-primary">確認</button>
+        </div>
+        <div class="seminar-table">
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>說明會日期</th>
+                <th>會議名稱</th>
+                <th>文件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-th="說明會日期">2021/06/03</td>
+                <td data-th="會議名稱">
+                  <a href="#" class="link-color">說明會</a>
+                </td>
+                <td data-th="文件"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-contact">
+      <ul>
+        <li>新北辦公室：22063新北市板橋區遠東路1號3樓B室</li>
+        <li><a href="tel:+886-2-8953-5600">電話：+886-2-8953-5600</a>傳真：+886-2-8953-5955</li>
+      </ul>
+      <ul>
+        <li>高雄本部：82151高雄市路竹區路科一路3號（南科高雄園區）</li>
+        <li><a href="tel:+886-2-8953-5600">電話：+886-7-695-5001</a>傳真：+886-7-695-5019</li>
+      </ul>
+    </section>
+    <section class="footer-copy">
+      <p>版權所有 © 2020 財團法人電信技術中心 Telecom Technology Center.</p>
+    </section>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/all.js"></script>
+</html>

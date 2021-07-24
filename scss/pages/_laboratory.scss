@@ -1,0 +1,12 @@
+.laboratory {
+  .laboratory-search {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+
+    .laboratory-form-control {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+}

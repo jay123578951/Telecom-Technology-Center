@@ -3,50 +3,112 @@
     max-width: $container;
     margin: 0 auto;
 
-    .search-block {
+    .filter-block {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
       margin-bottom: 36px;
+      @include media-breakpoint-md {
+        justify-content: flex-end;
+      }
+      @include media-breakpoint-lg {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
 
-      .form-control {
+      .filter-control {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        @include media-breakpoint-md {
+          margin: 0 -8px;
+          margin-bottom: 16px;
+        }
+        @include media-breakpoint-lg {
+          margin: 0;
+          margin-bottom: 0;
+        }
+
+        .list-form-control {
+          width: 100%;
+          display: flex;
+          @include media-breakpoint-md {
+            width: 50%;
+            padding: 0 8px;
+          }
+          @include media-breakpoint-lg {
+            width: 25%;
+            padding: 0 16px 0 0;
+          }
+
+          &:nth-last-of-type(2) {
+            @include media-breakpoint-lg {
+              margin-bottom: 0;
+            }
+          }
   
-        label {
+          &:last-of-type {
+            width: 100%;
+            @include media-breakpoint-md {
+              width: 50%;
+            }
+            @include media-breakpoint-lg {
+              width: 75%;
+              margin-bottom: 0;
+            }
+          }
+    
+          label {
+            min-width: 64px;
+            white-space: nowrap;
+          }
+    
+          input, select {
+            width: 100%;
+          }
+        }
+      }
+
+      .filter-btns {
+        width: 100%;
+        display: flex;
+        @include media-breakpoint-md {
+          width: auto;
+        }
+
+        .search-btn {
+          display: block;
+          width: 50%;
           margin-right: 8px;
+          @include media-breakpoint-md {
+            width: 112px;
+          }
         }
-  
-        input {
-          font-size: 16px;
-          width: 112px;
+
+        a {
+          display: block;
+          width: 50%;
+          @include media-breakpoint-md {
+            width: 112px;
+          }
+
+          .add-btn {
+            width: 100%;
+            @include media-breakpoint-md {
+              padding: 6px 0;
+            }
+          }
         }
-  
-        select {
-          width: 112px;
-        }
-      }
-  
-      .search-btn {
-        width: 112px;
-        padding: 6px 0;
-      }
-  
-      .add-btn {
-        width: 112px;
-        padding: 6px 0;
       }
     }
 
-    .data-table {
-      .form-table {
-        th, td {
-          text-align: left;
-          @include media-breakpoint-md {
-            text-align: center;
-          }
+    .list-form-table {
+      th, td {
+        text-align: left;
+        @include media-breakpoint-lg {
+          text-align: center;
         }
       }
     }

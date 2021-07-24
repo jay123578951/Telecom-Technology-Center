@@ -6,38 +6,27 @@
       justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 32px;
-      @include media-breakpoint-md {
+      @include media-breakpoint-lg {
         margin-bottom: 64px;
       }
   
-      .form-control {
+      .profile-form-control {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
-        width: 100%;
-        margin-bottom: 20px;
-        @include media-breakpoint-md {
+        @include media-breakpoint-lg {
+          width: 100%;
           flex-wrap: nowrap;
         }
-  
+
         &:last-of-type {
           margin-bottom: 0;
         }
   
-        label {
-          width: 100%;
-          margin-right: 13px;
-          margin-bottom: 8px;
-          @include media-breakpoint-md {
-            width: auto;
-            margin-bottom: 0;
-          }
-        }
-  
         input {
           width: 100%;
-          @include media-breakpoint-md {
+          @include media-breakpoint-lg {
             width: calc(100% - 96px);
           }
         }

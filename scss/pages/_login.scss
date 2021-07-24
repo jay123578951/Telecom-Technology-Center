@@ -3,13 +3,14 @@
   margin: 0 auto;
 
   h2 {
-    text-align: center;
-    color: white;
-    font-size: 26px;
-    padding-top: 72px;
-    margin-bottom: 36px;
+    display: none;
     @include media-breakpoint-md {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 26px;
       padding-top: 91px;
+      margin-bottom: 36px;
     }
   }
 
@@ -45,52 +46,47 @@
       width: 100%;
       margin: 0 auto;
       @include media-breakpoint-md {
-        width: fit-content;
+        width: 355px;
       }
 
-      .form-control {
+      .login-form-control {
         position: relative;
         text-align: left;
-        margin-bottom: 16px;
-        @include media-breakpoint-md {
-          margin-bottom: 20px;
-        }
         
         label {
           display: block;
           position: relative;
-          margin-bottom: 6px;
+          width: 100%;
           @include media-breakpoint-md {
             position: absolute;
             top: 50%;
             left: -20px;
             transform: translate(-100%, -50%);
-            margin-bottom: 0;
+            width: auto;
+            margin-right: 0;
           }
         }
 
         input {
           position: relative;
           width: 100%;
-          @include media-breakpoint-md {
-            width: 355px;
-          }
         }
       }
     }
 
     .input-verification-code {
       text-align: right;
+      margin: 0 auto;
       margin-top: -5px;
       margin-bottom: 24px;
-      @include media-breakpoint-md {
+      @include media-breakpoint-lg {
         margin-bottom: 32px;
       }
     }
 
     .form-remember {
       margin-bottom: 32px;
-      @include media-breakpoint-md {
+      @include media-breakpoint-lg {
         margin-bottom: 46px;
       }
 

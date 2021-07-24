@@ -11,33 +11,37 @@
   }
 
   form {
+    input, select {
+      @include media-breakpoint-lg {
+        max-width: $add-case-input-width;
+        width: 100%;
+      }
+    }
+
+    .case-form-control {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      @include media-breakpoint-lg {
+        width: calc(50% - 18px);
+      }
+    }
+
+    .d-lg-block {
+      display: none;
+      @include media-breakpoint-lg {
+        display: flex;
+      }
+    }
+
     .case-data-block,
     .case-information-block {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
-
-      .form-control {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-        width: calc(50% - 18px);
-        margin-bottom: 20px;
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
-
-        label {
-          margin-right: 13px;
-        }
-
-        input, select {
-          max-width: $add-case-input-width;
-        }
-      }
     }
 
     .case-data-block {
@@ -48,12 +52,17 @@
         font-size: 14px;
         text-align: right;
         margin-top: 8px;
-        margin-right: -9px;
+        @include media-breakpoint-md {
+          margin-right: -9px;
+        }
       }
 
       .series-main-case-lg {
-        width: calc(#{$add-case-input-width} - 50px);
+        width: calc(100% - 50px);
         margin-right: 12px;
+        @include media-breakpoint-lg {
+          width: calc(#{$add-case-input-width} - 50px);
+        }
       }
 
       .series-main-case-sm {
@@ -70,37 +79,66 @@
       }
 
       .payment-select {
-        width: calc(#{$add-case-input-width} / 2 - 6px);
+        width: calc(100% / 2 - 6px);
         margin-right: 6px;
+        @include media-breakpoint-lg {
+          width: calc(#{$add-case-input-width} / 2 - 6px);
+        }
       }
 
       .payment-input {
-        width: calc(#{$add-case-input-width} / 2 - 6px);
+        width: calc(100% / 2 - 6px);
         margin-left: 6px;
+        @include media-breakpoint-lg {
+          width: calc(#{$add-case-input-width} / 2 - 6px);
+        }
       }
 
-      .form-w-max {
+      .case-information-w-max {
         width: 100%;
 
         input {
-          max-width: 989px;
+          @include media-breakpoint-lg {
+            max-width: 989px;
+          }
         }
       }
 
       .form-upload {
-        max-width: 100%;
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         align-items: center;
+        @include media-breakpoint-lg {
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+        }
+
+        label {
+          width: 100%;
+          @include media-breakpoint-lg {
+            width: auto;
+          }
+        }
 
         input {
           width: calc(#{$add-case-input-width} - 115.45px);
           padding: 0;
+          margin-bottom: 12px;
           border: none;
+          @include media-breakpoint-md {
+            margin-bottom: 0;
+          }
         }
 
         button {
+          width: 100%;
           border-radius: 3px;
           padding: 6px 16px;
+          @include media-breakpoint-md {
+            width: auto;
+          }
 
           img {
             position: relative;
@@ -112,10 +150,20 @@
 
     .case-submit-block {
       text-align: right;
+      @include media-breakpoint-lg {
+        text-align: right;
+      }
 
       button {
+        width: 100%;
         padding: 6px 38px;
-        margin-left: 8px;
+        margin-left: 0;
+        margin-bottom: 16px;
+        @include media-breakpoint-md {
+          width: auto;
+          margin-left: 8px;
+          margin-bottom: 0;
+        }
       }
     }
   }
