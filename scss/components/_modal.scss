@@ -1,0 +1,9 @@
+.modal-header {
+  justify-content: flex-start;
+  background-color: $primary;
+  color: white;
+  
+  .modal-title {
+    margin-right: 24px;
+  }
+}

@@ -1,3 +1,7 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/modal";
 
 @import 'helpers/variable';
 @import 'base/reset';
@@ -10,6 +14,7 @@
 @import 'components/table';
 @import 'components/form-control';
 @import 'components/transparent-bg';
+@import 'components/modal';
 
 @import 'layout/header';
 @import 'layout/footer';
